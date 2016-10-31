@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="employeesApp">
+<head>
+    <title>Employees</title>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="Content/jasmine/jasmine.css" rel="stylesheet" />
+</head>
+<body style="margin: 30px">
+    <div data-ng-controller="main">
+        <h2>Employees data</h2>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-12">
+                    <label>Search employee</label>
+                    <input type="text" ng-model="selected" uib-typeahead="state as (state.firstName+' ' +state.surname) for state in structure.array | filter:$viewValue | limitTo:8" class="form-control">
+                    <hr />
+                    <div class="row">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First name</th>
+                                    <th>Surname</th>
+                                    <th>Date of birth</th>
+                                    <th>Age</th>
+                                    <th>Salary</th>
+                                    <th>Tale home</th>
+                                    <th>Income tax</th>
+                                    <th>National insurance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{selected.firstName}}</td>
+                                    <td>{{selected.surname}}</td>
+                                    <td>{{selected.dateOfBirth | date}}</td>
+                                    <td>{{selected.age}}</td>
+                                    <td>{{selected.salary}}</td>
+                                    <td>{{selected.takeHome}}</td>
+                                    <td>{{selected.incomeTax}}</td>
+                                    <td>{{selected.nationalInsurance}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
+
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/jasmine/jasmine.js"></script>
+    <script src="Scripts/jasmine/jasmine-html.js"></script>
+    <script src="Scripts/jasmine/boot.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+    <script src="basicService.js"></script>
+<!--     <script src="simpleTest.js"></script> -->
+</body>
+</html>

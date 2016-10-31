@@ -1,0 +1,10 @@
+{
+	"employees": [
+		{"id": 1, "gender": "male", "title": "Mr.", "firstName": "Tom", "surname": "Roberts", "dateOfBirth": "21/04/1986", "age": 29, "salary": 59783.00, "takeHome": 41999.84, "incomeTax": 13316.20, "nationalInsurance": 4466.96},
+		{"id": 2, "gender": "male", "title": "Mr.", "firstName": "Louis", "surname": "Singh", "dateOfBirth": "16/04/1976", "age": 36, "salary": 50738.00, "takeHome": 36499.84, "incomeTax": 9366.20, "nationalInsurance": 4266.96},
+		{"id": 3, "gender": "male", "title": "Mr.", "firstName": "Mohammed", "surname": "Johnn", "dateOfBirth": "18/05/1992", "age": 23, "salary": 26783.00, "takeHome": 21099.84, "incomeTax": 3316.20, "nationalInsurance": 2166.96},
+		{"id": 4, "gender": "male", "title": "Mr.", "firstName": "Owen", "surname": "Humphreys", "dateOfBirth": "15/05/1972", "age": 43, "salary": 31783.00, "takeHome": 24395.35, "incomeTax": 4316.20, "nationalInsurance": 2709.96},
+		{"id": 5, "gender": "female", "title": "Mrs.", "firstName": "Holly", "surname": "Gregory", "dateOfBirth": "31/01/1993", "age": 22, "salary": 60053.00, "takeHome": 42865.84, "incomeTax": 13786.20, "nationalInsurance": 4862.96}
+		
+	]
+}
